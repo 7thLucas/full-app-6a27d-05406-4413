@@ -16,31 +16,39 @@ export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
   brandColor: TBrandColor;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  tagline?: string;
+  heroTitle?: string;
+  heroSubtitle?: string;
+  uploadCtaLabel?: string;
+  supportedFormatsLabel?: string;
+  maxFileSizeMb?: number;
+  analysisSteps?: string[];
+  footerText?: string;
+  showDashboardHistory?: boolean;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "FILL_APP_NAME_HERE",
+  appName: "Music Insight Analyzer",
   logoUrl: "FILL_LOGO_URL_HERE",
   brandColor: {
-    primary: "FILL_PRIMARY_COLOR_HERE",
-    secondary: "FILL_SECONDARY_COLOR_HERE",
-    accent: "FILL_ACCENT_COLOR_HERE",
+    primary: "#7C3AED",
+    secondary: "#3B82F6",
+    accent: "#3B82F6",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // Required branding fields → use the FILL_X_HERE placeholder pattern.
-  // Optional/typed defaults → real value with a "// fill it here" comment:
-  //
-  //   maxItemsPerPage: 12,                     // fill it here
-  //   enableNotifications: true,               // fill it here
-  //   featuredCategories: [],                  // fill it here
-  //   defaultLanguage: "en",                   // must match enum options
-  //   launchDate: "2025-01-01T00:00:00.000Z",  // ISO-8601
-  //   heroImage: "",                           // resolved URL after upload
-  //   galleryImages: [],                       // array of resolved URLs
-  // ─────────────────────────────────────────────────────────────────────
+  tagline: "Expert music feedback, powered by AI",
+  heroTitle: "Understand Your Music Like Never Before",
+  heroSubtitle:
+    "Upload any track and receive an in-depth written analysis — mood, genre, production quality, commercial appeal, and more. Like having a music producer, critic, and marketing expert in your pocket.",
+  uploadCtaLabel: "Analyze My Track",
+  supportedFormatsLabel: "MP3, WAV, M4A, AAC — up to 50MB",
+  maxFileSizeMb: 50,
+  analysisSteps: [
+    "Extracting audio features…",
+    "Analyzing mood and energy…",
+    "Detecting genre and instrumentation…",
+    "Evaluating commercial appeal…",
+    "Generating your expert report…",
+  ],
+  footerText: "© 2026 Music Insight Analyzer. Built for musicians, by music lovers.",
+  showDashboardHistory: true,
 };
