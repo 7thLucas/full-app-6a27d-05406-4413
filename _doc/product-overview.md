@@ -1,0 +1,1 @@
+Build me an app for fitness studio owners to help them schedule classes, track memberships, and manage trainers with the goal to boost member retention and fill every class
