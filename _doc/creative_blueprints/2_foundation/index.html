@@ -1,0 +1,92 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-narrative { width: 56%; }
+.mode-landscape .sl-visual { width: 44%; display: flex; }
+.mode-portrait .sl-narrative { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Narrative -->
+    <div class="sl-narrative flex flex-col p-12 gap-0 overflow-hidden">
+
+      <!-- Section label -->
+      <div class="mb-6">
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-600">Why StudioFlow Exists</span>
+      </div>
+
+      <!-- Problem -->
+      <div class="flex-1 flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <line x1="7" y1="2.5" x2="7" y2="7.5" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="7" cy="10" r="1" fill="#ef4444"/>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900">The Problem</h2>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Studio owners manage scheduling, memberships, and trainers across disconnected tools — spreadsheets, group chats, booking apps that don't talk to each other. Classes run half-empty. Members quietly disengage and churn before anyone notices. Trainer conflicts cause last-minute cancellations. And owners spend hours every week on admin instead of growing their business.
+        </p>
+        <div class="flex flex-col gap-2 mt-1">
+          <div class="flex items-start gap-2.5">
+            <div class="w-4 h-4 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-sm text-slate-600">No-shows leave classes half-empty with no automated recovery</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <div class="w-4 h-4 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-sm text-slate-600">At-risk members churn undetected — invisible until they're already gone</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <div class="w-4 h-4 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="text-sm text-slate-600">Trainer scheduling lives in texts, causing conflicts and cancellations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-100 my-5"></div>
+
+      <!-- Solution -->
+      <div class="flex-1 flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900">The Solution</h2>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          StudioFlow replaces the chaos with a single platform built around one goal: a full schedule and a loyal membership. Three interconnected pillars — scheduling, membership intelligence, and trainer coordination — give owners the clarity and automation to run a studio that consistently fills and retains.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-1">
+          <div class="bg-indigo-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Smart Scheduling</div>
+          <div class="bg-emerald-500 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Membership Intelligence</div>
+          <div class="bg-violet-500 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Trainer Coordination</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=confident%20fitness%20studio%20owner%20reviewing%20scheduling%20app%20on%20tablet%20bright%20modern%20gym%20interior%20background%20professional%20calm%20warm%20light"
+        alt="Studio owner reviewing their schedule on a tablet"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, white 0%, rgba(255,255,255,0.1) 25%, transparent 50%);"></div>
+    </div>
+
+  </div>
+</section>
