@@ -1,0 +1,76 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 56%; }
+.mode-landscape .sl-visual { width: 44%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { width: 100%; height: 36%; }
+</style>
+
+<section class="w-full h-full overflow-hidden bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div class="flex flex-col gap-7">
+
+        <!-- Brand lockup -->
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center flex-shrink-0">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="5" height="5" rx="1.2" fill="white"/>
+              <rect x="9" y="2" width="5" height="5" rx="1.2" fill="white"/>
+              <rect x="2" y="9" width="5" height="5" rx="1.2" fill="white"/>
+              <rect x="9" y="9" width="5" height="5" rx="1.2" fill="white" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="text-sm font-bold text-indigo-600 tracking-tight">StudioFlow</span>
+        </div>
+
+        <!-- Headline block -->
+        <div class="flex flex-col gap-4">
+          <div class="text-xs font-bold tracking-widest uppercase text-slate-400">Fitness Studio Management</div>
+          <h1 class="text-5xl font-black text-slate-900 leading-tight">
+            Fill Every Class.<br/>Keep Every<br/>Member.
+          </h1>
+          <p class="text-base text-slate-500 leading-relaxed max-w-xs">
+            StudioFlow gives studio owners one platform to schedule classes, retain members, and coordinate trainers — without the admin chaos.
+          </p>
+        </div>
+
+        <!-- Pillar chips -->
+        <div class="flex flex-wrap gap-2">
+          <span class="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 inline-block flex-shrink-0"></span>
+            Class Scheduling
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block flex-shrink-0"></span>
+            Membership Tracking
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 text-xs font-semibold px-3 py-1.5 rounded-full">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-500 inline-block flex-shrink-0"></span>
+            Trainer Management
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=boutique%20fitness%20studio%20interior%20bright%20natural%20light%20yoga%20pilates%20class%20instructor%20members%20warm%20modern%20minimal%20premium%20high%20end"
+        alt="Boutique fitness studio with class in session"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to right, white 0%, rgba(255,255,255,0.15) 28%, transparent 55%);"></div>
+    </div>
+
+  </div>
+</section>
