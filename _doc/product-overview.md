@@ -40,6 +40,41 @@ Supporting capabilities across all three pillars:
 
 ---
 
+## Next Feature Goals (Post-MVP)
+
+Three concrete product capabilities being built immediately after the MVP (class scheduling with live seat visibility):
+
+### 1. Member Retention Alerts
+Automated early-warning system that flags members who are going cold: missed consecutive classes, membership nearing expiry, or a measurable drop in booking frequency. Studio owners get an actionable dashboard — surfacing at-risk members by urgency, with one-tap re-engagement actions (message, offer, check-in call prompt) — so churn is caught and reversed before it becomes a cancellation.
+
+Key capabilities:
+- Configurable alert thresholds (e.g. 2+ missed classes, <30 days to expiry, booking frequency down 50%+)
+- At-risk member dashboard sorted by risk severity
+- Re-engagement action prompts directly from the alert view
+- Alert history and resolution tracking per member
+
+### 2. Trainer Management Hub
+A unified trainer operations center: profiles with certifications and bio, availability calendars owners can read at a glance, class assignment tracking across the whole schedule, and automated conflict detection that surfaces double-bookings or over-allocation before they become problems.
+
+Key capabilities:
+- Trainer profiles (certifications, specialties, contact info, bio)
+- Availability calendar with editable time blocks per trainer
+- Class assignment tracking — who covers which class, when, and how many hours per week
+- Conflict detection: flags double-bookings and over-scheduled trainers automatically
+- Trainer workload view: at-a-glance status of who is available, loaded, or at capacity
+
+### 3. Self-Service Member Booking Portal
+A member-facing interface where members can browse the published class schedule, book or cancel their own spots, join the waitlist, and view their current membership status. Reduces front-desk admin overhead and increases fill rates by removing friction from the booking process.
+
+Key capabilities:
+- Browsable class schedule with live seat availability
+- One-tap book and cancel with instant confirmation
+- Waitlist join and automatic promotion notifications
+- Membership status view (active/expiry date/classes remaining)
+- Booking history and upcoming class summary
+
+---
+
 ## Primary Goal
 
 Boost member retention and fill every class — turning a well-run, system-driven studio into one that is consistently at capacity with a healthy, growing membership base.
